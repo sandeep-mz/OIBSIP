@@ -3,6 +3,15 @@
 // Get references to the display and buttons
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('.buttons button');
+const historyDisplay = document.getElementById('history');
+
+// Initialize the history array
+let history = [];
+
+// Function to update and display the history
+function updateHistory() {
+  historyDisplay.innerHTML = history.join('<br>');
+}
 
 // Add event listeners to the buttons
 buttons.forEach(button => {
@@ -41,14 +50,45 @@ function calculate() {
     const rootValue = parseFloat(expression.slice(expression.indexOf('√') + 1));
     const result = Math.sqrt(rootValue);
     display.value = result;
-    return;
+  } else {
+    // Evaluate the expression using JavaScript's eval() function
+    const result = eval(expression);
+
+    // Display the result
+    display.value = result;
+
+    // Add the calculation and result to the history array
+    history.push(expression + ' = ' + result);
+    updateHistory();
   }
-
-  // Evaluate the expression using JavaScript's eval() function
-  const result = eval(expression);
-
-  // Display the result
-  display.value = result;
 }
 
+const historyContainer = document.getElementById('history-container');
+const historyIcon = document.getElementById('history-icon');
 
+historyIcon.addEventListener('click', () => {
+    historyContainer.style.display = 'block';
+});
+
+// Function to hide the history container
+function hideHistory() {
+    historyContainer.style.display = 'none';
+}
+
+// Add this function to your existing 'calculate' function to show history
+function showHistory() {
+    historyContainer.style.display = 'block';
+    updateHistory();
+}
+
+// Call showHistory() in your 'calculate' function
+// const historyIcon = document.getElementById('history-icon');
+
+// Function to toggle the visibility of the history icon
+function toggleHistoryIcon() {
+    historyIcon.style.display = (historyIcon.style.display === 'block') ? 'none' : 'block';
+}
+
+// Add a click event listener to the "+" button
+const plusButton = document.getElementById('btnplus');
+plusButton.addEventListener('click', toggleHistoryIcon);

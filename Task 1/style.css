@@ -1,17 +1,55 @@
 
 body{
-    background-color: rgb(38, 85, 133);
+    background-color: rgb(4, 29, 41);
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
 #calculator {
-    width: 350px;
-    margin: 8em auto;
-    text-align: center;
+    width: 60%;
+    padding: 10px;
     background-color: #f1f1f1;
-    border: 1px solid #9f9c9c;
-    padding: 20px;
+    border: 1px solid #ccc;
     border-radius: 10px;
-  }
-  
+}
+
+    #history-container {
+        position: relative;
+        float: right;
+        right:20px; /* Adjust the desired right margin */
+    }
+
+    #history-icon {
+        display: none; /* Initially hide the history icon */
+        cursor: pointer;
+    }
+
+    /* Style the history icon, you can adjust these styles as needed */
+    #history-icon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Show the history icon when the mouse hovers over the "+" button */
+    #btnplus:hover + #history-container #history-icon {
+        display: block;
+    }
+
+    /* Styles for the history container */
+    #history {
+        width: 100%;
+        padding: 10px;
+        background-color: #f3efc1;
+        border: 1px solid #ccc;
+        border-radius: 10px 10px 0px 0px;
+    }
+/* Add additional styles as needed */  
   #display {
     width: 100%;
     padding: 0px;
@@ -21,6 +59,7 @@ body{
     border-radius: 5px;
     background-color: #f3efc1;
     text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .buttons {
@@ -48,7 +87,11 @@ body{
   #display,
   button[id="btnEq"],
   button[id="btnClear"] {
-    grid-column: span 4;
+    grid-column: span 3;
+  }
+  #display,
+  button[id="btnplus"] {
+    grid-row: span 2;
   }
   
   button[id="btnEq"] {
