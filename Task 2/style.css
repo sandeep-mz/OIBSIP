@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .Steave {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  .VideoContainer {
+    width: 100%;
+    padding-top: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .VideoContainer video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .VideoContainer video[poster] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .Qoute {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 15rem;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 20px;
+  }
+  .text P{
+    width: 400px;
+  }
+  .photo img {
+    border-radius: 5px;
+    padding-right: 15rem;
+  }
+  .Biography{
+    background-color: #1b1a1a;
+    color: #f0f0f0;
+    margin-top: -4px;
+  }
+  .bio{
+    padding: 40px;
+  }
+  .Biography h3 {
+    height: 50px;
+    width: 60px;
+    font-size: 1.5em;
+  }
+
+  .Biography p {
+    line-height: 1.4;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer .fa-apple {
+    color: #f0efef;
+    margin: 0 5px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #fffbfb;
+  }
+  
+  .footer a:hover {
+    text-decoration: none;
+    color: rgb(227, 134, 134);
+  }
+  
