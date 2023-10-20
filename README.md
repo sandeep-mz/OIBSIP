@@ -39,4 +39,37 @@ Happy Calculating! 🧮
 
 
 
-# Task 2 - Upcomming Project
+# Task 2 - TRIBUTE PAGE
+
+![Screenshot 2023-10-20 232411](https://github.com/sandeep-mz/OIBSIP/assets/108665091/6603a07a-cc1f-4398-809b-eb8f1b8da103)
+
+This project is a simple webpage that allows you to express your admiration for someone you admire. It was built using HTML and CSS, making it accessible for those with a basic understanding of web development.
+
+## Description
+
+This project is a creative way to celebrate and showcase what you admire in a person who holds a special place in your heart. You can customize the content, layout, and styles to create a personalized webpage dedicated to your admired individual.
+
+## Features
+
+- **HTML and CSS:** The webpage is built using fundamental HTML and CSS, making it easy for beginners to create their tribute page.
+
+- **Text Content:** You can write about what you adore and admire in the person. Paragraphs are used appropriately to structure your thoughts.
+
+- **Images:** The project allows you to add images that represent the person or moments related to your admiration.
+
+- **Appealing Layout:** The webpage is designed to have an attractive and visually appealing layout.
+
+- **Font Styles:** You have the flexibility to experiment with different font styles to personalize your content.
+
+- **Background Colors:** Customize the background colors to match your design preferences.
+
+## Project Structure
+
+The project consists of the following files:
+
+- `index.html`: The HTML file that defines the structure of your webpage.
+- `style.css`: The CSS file responsible for styling your webpage.
+- `assets`: This directory contains images used in the project, such as images of the person you admire.
+
+## Task 3 - Coming Soon
+
