@@ -115,5 +115,8 @@ To run the app locally, follow these steps:
 Contributions are welcome. Please open an issue to discuss potential changes or improvements.
 
 
+# Contact✔️🔴
+
+If you have any questions or need further information about the project, you can contact the project owner at - @initialsandeep09@gmail.com.
 
 
