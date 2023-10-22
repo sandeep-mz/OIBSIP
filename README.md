@@ -71,5 +71,49 @@ The project consists of the following files:
 - `style.css`: The CSS file responsible for styling your webpage.
 - `assets`: This directory contains images used in the project, such as images of the person you admire.
 
-## Task 3 - Coming Soon
+# Task 2 - Basic To-Do App
+
+A basic to-do app that allows users to manage daily tasks. Users can add, complete, edit, and delete tasks, and tasks are categorized into pending and completed.
+
+## Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+
+## Features
+
+- Add new tasks to a to-do list.
+- Mark tasks as "complete" upon successful completion.
+- Tasks are categorized into pending and completed.
+- Edit or delete tasks from the list.
+- Keep track of the date and time when a task is added or completed.
+
+## Screenshots
+
+![Screenshot (133)](https://github.com/sandeep-mz/OIBSIP/assets/108665091/b6ad4245-9fa9-4b28-b4ca-a7a0e0a9c8bc)
+
+
+## Installation
+
+To run the app locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+2. Navigate to the project directory: `cd your-repo`
+3. Open the `index.html` file in your web browser.
+
+## Usage
+
+- Add new tasks by entering a title and description and clicking the "Save" button.
+- Mark tasks as "complete" by clicking the appropriate button.
+- Edit or delete tasks using the provided options.
+- View tasks in the "Pending" or "Completed" sections, or see a combined list.
+
+## Contributing
+
+Contributions are welcome. Please open an issue to discuss potential changes or improvements.
+
+
+
 
